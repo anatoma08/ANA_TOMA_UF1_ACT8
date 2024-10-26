@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Titol-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matriculació"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- CheckBoxes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tria les materies:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDesignUI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disseny d'interfície" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PSP" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDesign2D3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disseny 2D/3D" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMobileDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositius Mòbils" />
+
+    <!-- RadioButtons -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el torn:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matí" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAfternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarda" />
+    </RadioGroup>
+
+    <!-- Botón per confirmar la matrícula -->
+    <Button
+        android:id="@+id/buttonEnroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Matrícula"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
